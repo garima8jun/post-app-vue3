@@ -1,4 +1,4 @@
-# vuejs-news-pwaapp
+
 
 ## Project setup
 ```
