@@ -1,8 +1,9 @@
-
+# vuejs-news-pwaapp
 
 ## Project setup
 ```
-npm install
+npm install -g @vue/cli
+vue --version
 ```
 
 ### Compiles and hot-reloads for development
@@ -19,3 +20,6 @@ npm run build
 ```
 npm run lint
 ```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
