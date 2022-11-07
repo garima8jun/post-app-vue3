@@ -1,6 +1,6 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" variant="primary">
-    <b-navbar-brand href="/">BRAND</b-navbar-brand>
+  <b-navbar class="justify-content-center d-flex" toggleable="lg" type="dark" variant="primary">
+    <b-navbar-brand href="/">Home</b-navbar-brand>
   </b-navbar>
 </template>
 

@@ -6,7 +6,7 @@
       </b-button>
       <b-row no-gutters class="text-center" align-h="center" align-v="center">
         <b-col cols="12">
-          <b-avatar size="150" variant="primary" :src="`https://ui-avatars.com/api?name=${currentUser.name}&background=random&size=128`"></b-avatar>
+          <b-avatar class="user-img" size="150" variant="primary" :src="`https://ui-avatars.com/api?name=${currentUser.name}&background=random&size=128`"></b-avatar>
           <b-card-body :title="currentUser.name">
             <b-card-text>
               <p class="m-0">{{ currentUser.email }}</p>
@@ -23,7 +23,7 @@
           <b-list-group>
             <template v-for="post in userPosts">
               <b-list-group-item :key="post.id" :to="`/user/${$route.params.userId}/${post.id}`">
-                <b-card>
+                <b-card class="border-0">
                   <b-card-body class="px-0">
                     <b-card-title class="mb-2">{{ post.title }}</b-card-title>
                     <b-card-text>{{ post.body.slice(0, 50) }} ....</b-card-text>
@@ -34,8 +34,34 @@
           </b-list-group>
         </b-col>
       </b-row>
-      <div v-else class="text-center p-5">
-        <b-spinner variant="primary" type="grow" label="Spinning"></b-spinner>
+      <div v-else class="text-center p-3">
+        <!-- <b-spinner variant="primary" type="grow" label="Spinning"></b-spinner> -->
+
+        <b-row no-gutters class="text-center" align-h="center" align-v="center">
+        <b-col cols="12">
+          <div class="container">
+            <div class="header">
+              <div class="nav">
+          <div class="nav-items">
+            </div>
+              </div>
+              <div class="content">
+                <div class="animated">
+                  <div class="parent"></div>
+                  <div class="padding"></div>
+                  <div class="title"></div>
+                  <div class="padding"></div>
+                  <div class="followers"></div>
+                  <div class="padding"></div>
+                  <div class="description"></div>
+                  <div class="padding"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </b-col>
+      </b-row>
+
       </div>
     </b-card>
   </div>
@@ -56,4 +82,3 @@ export default Vue.extend({
   }
 })
 </script>
-
