@@ -1,2 +1,24 @@
-# post-app-vue3
-This App will show users list on the home page , when clicked it will redirect to particular user post page.
+# user-posts
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
